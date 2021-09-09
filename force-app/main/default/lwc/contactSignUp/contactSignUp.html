@@ -1,0 +1,32 @@
+<!--
+  @description       : 
+  @author            : Nikhil Muppidi
+  @group             : 
+  @last modified on  : 09-09-2021
+  @last modified by  : Nikhil Muppidi
+-->
+<template>
+    <lightning-card  variant="Narrow"  title="Contact Signup Form" icon-name="standard:contact">
+        <div class="slds-m-around_medium">
+            <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="6" >
+                    <lightning-input type="text" class="validate" variant="standard" name="FirstName" label="First Name" required></lightning-input>
+                    <lightning-input type="text" class="validate" variant="standard" name="LastName" label="Last Name" required></lightning-input>
+                    <lightning-input type="email" class="validate" variant="standard" name="Email" label="Email" required></lightning-input>
+                    <lightning-input type="text" class="validate" variant="standard" name="Company" label="Company" required></lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="6" >
+                    <lightning-input type="password" class="validate" variant="standard" name="Password" label="Password" required></lightning-input>
+                    <lightning-input type="tel" class="validate" variant="standard" name="Phone" label="Phone" required></lightning-input>
+                    <lightning-input type="number" class="validate" variant="standard" name="PinCode" label="Pin Code" ></lightning-input>
+                    
+                </lightning-layout-item>
+                
+            </lightning-layout>
+            <div class="slds-text-align_center">
+                <lightning-button variant="brand" label="Sign Up"  onclick={signUpHandler}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
