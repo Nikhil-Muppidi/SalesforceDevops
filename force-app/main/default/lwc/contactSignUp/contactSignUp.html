@@ -12,13 +12,17 @@
                 <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="6" >
                     <lightning-input type="text" class="validate" variant="standard" name="FirstName" label="First Name" required></lightning-input>
                     <lightning-input type="text" class="validate" variant="standard" name="LastName" label="Last Name" required></lightning-input>
-                    <lightning-input type="email" class="validate" variant="standard" name="Email" label="Email" required></lightning-input>
+                    <lightning-input type="email" class="validate"  variant="standard" name="Email" label="Email" required
+                    pattern="[a-zA-z0-9._-]+@[a-z0-9-]+\.[a-z]{2,}$" message-when-pattern-mismatch="Please Enter valid Email Id"
+                    ></lightning-input>
                     <lightning-input type="text" class="validate" variant="standard" name="Company" label="Company" required></lightning-input>
                 </lightning-layout-item>
 
                 <lightning-layout-item size="12" padding="around-small" small-device-size="3" medium-device-size="6" large-device-size="6" >
                     <lightning-input type="password" class="validate" variant="standard" name="Password" label="Password" required></lightning-input>
-                    <lightning-input type="tel" class="validate" variant="standard" name="Phone" label="Phone" required></lightning-input>
+                    <lightning-input type="tel" class="validate" variant="standard" name="Phone" label="Phone" required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}$" message-when-pattern-mismatch="Please give phn in this 000-000-0000 format"
+                    ></lightning-input>
                     <lightning-input type="number" class="validate" variant="standard" name="PinCode" label="Pin Code" ></lightning-input>
                     
                 </lightning-layout-item>
